@@ -9,7 +9,7 @@ import Git from "./Git.png";
 import GithubLite from './github-icon-1600.png'
 import Vite from "./Vite.png";
 import TailwindCSS from "./TailwindCSS.png";
-import react from "./react.png";
+import react from "./React.png";
 import ManitLogo from './manitLogo.png';
 import Manit from './manit.png'
 import ShopCart from './ShopCart.png';
