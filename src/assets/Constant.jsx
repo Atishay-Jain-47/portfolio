@@ -16,6 +16,8 @@ import ShopCart from './ShopCart.png';
 import ToDo from './ToDoList.png';
 import WeatherApp from './WeatherApp.png';
 import StudySync from './StudySync.png';
+import Portfolio from './Portfoilio.png';
+import NumberGussing from './NumberGuessing.png';
 
 
 export {
@@ -37,6 +39,8 @@ export {
     ToDo,
     WeatherApp,
     StudySync,
+    Portfolio,
+    NumberGussing,
   };
 
   

@@ -7,27 +7,33 @@ import {ThemeContext} from '../context/ThemeContext';
 
 function Navbar(){
 
+  
   const [nav, setNav] = useState(false);
+  
+  const {theme, themeHandler, setTheme} = useContext(ThemeContext);
 
-  const {theme, themeHandler} = useContext(ThemeContext);
 
   function navHandler() {
     setNav(!nav);
   }
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } 
-    else {
-      document.documentElement.classList.remove('dark');
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme) {
+      setTheme(localTheme); // Sync with context
+      document.documentElement.classList.toggle('dark', localTheme === 'dark');
     }
-    console.log(theme);
+  }, []);
+  
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    localStorage.setItem('theme', theme); // Store updated theme
   }, [theme]);
-
+  
+  
   return (
-    <div className="sticky top-0 p-2 b w-full flex flex-col left-0 bg-[#F5F3FE] right-0 max-[930px]:mx-5 dark:bg-[#00040f] z-50">
-      <div className="flex justify-between items-center w-[90%] mx-auto py-4"
+    <div className="sticky w-full top-0 p-2 bg-[#F5F3FE] flex flex-col justify-center items-center dark:bg-[#00040f] overflow-hidden z-50">
+      <div className="max-w-7xl flex justify-between items-center w-[90%] mx-auto py-4"
         data-aos="zoom-in"
         data-aos-duration="1000"
         data-aos-once="true">
@@ -37,7 +43,7 @@ function Navbar(){
           Atishay
         </a>
 
-        <div className="text-[20px] max-[930px]:hidden flex gap-12 text-[#00040f] dark:text-[#e1e1e1]">
+        <div className="text-[20px] max-[768px]:hidden flex gap-12 text-[#00040f] dark:text-[#e1e1e1]">
           <a href="#" className="hover:text-cyan-500">Home</a>
           <a href="#education" className="hover:text-cyan-500">Education</a>
           <a href="#projects" className="hover:text-cyan-500">Projects</a>
@@ -54,7 +60,7 @@ function Navbar(){
         </div>
 
         <div 
-          className="min-[930px]:hidden flex gap-x-4"
+          className="md:hidden flex gap-x-4"
         >
 
           <div className="cursor-pointer" onClick={themeHandler} >

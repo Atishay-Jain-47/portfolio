@@ -1,49 +1,56 @@
-import { ShopCart, WeatherApp } from "./assets/Constant"
+import { ShopCart, WeatherApp, Portfolio, ToDo, NumberGussing, StudySync, Github } from "./assets/Constant"
 
 const project = [
     {
         image: ShopCart,
         title: "ShopCart Website",
-        description: "ShopCart is a responsive project built with React and Tailwind. It lets users add and remove items from the cart, view all selected products, and dynamically displays the total price.",
-        technologies: ["React", "TailwindCSS"]
+        technologies: ["React", "TailwindCSS"],
+        liveLink: "https://shop-cart-app.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/ShopCart"
+    },
+
+    {
+        image: ToDo,
+        title: "Task Manager Website",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        liveLink: "https://task-manager-wine-ten-64.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/ToDoList"
+
     },
 
     {
         image: WeatherApp,
         title: "Weather App",
-        description:" ",
-        technologies: ["HTML", "CSS", "JavaScript"]
+        technologies: ["HTML", "CSS", "JavaScript"],
+        liveLink: "https://weather-forecast-one-sigma.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/WeatherApp"
 
     },
+
     {
-        image: WeatherApp,
-        title: "Weather App",
-        description:" ",
-        technologies: ["HTML", "CSS", "JavaScript"]
+        image: NumberGussing,
+        title: "Guess The Number Game",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        liveLink: "https://guess-the-number-game-gold.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/Guess-The-Number"
 
     },
+    
     {
-        image: WeatherApp,
-        title: "Weather App",
-        description:" ",
-        technologies: ["HTML", "CSS", "JavaScript"]
-
+        image: StudySync,
+        title: "Study Sync Website",
+        technologies: ["HTML", "CSS"],
+        liveLink: "https://study-sync-alpha-one.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/Study-Sync"
     },
+
     {
-        image: WeatherApp,
-        title: "Weather App",
-        description:" ",
-        technologies: ["HTML", "CSS", "JavaScript"]
-
+        image: Portfolio,
+        title: "Portfolio",
+        technologies: ["React", "Tailwind"],
+        liveLink: "https://portfolio-brown-three-20.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/portfolio"
     },
-    {
-        image: WeatherApp,
-        title: "Weather App",
-        description:" ",
-        technologies: ["HTML", "CSS", "JavaScript"]
-
-    },
-
 ]
 
 export default project;

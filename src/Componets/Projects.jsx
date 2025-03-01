@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div id='projects'>
         <div
-        className="font-bold flex flex-col dark:mt-0 items-center py-2 text-indigo-600 dark:text-indigo-500 text-5xl "
+        className="font-bold max-[1200px]:mt-4 flex flex-col dark:mt-0 items-center py-2 text-indigo-600 dark:text-indigo-500 text-5xl "
         data-aos="zoom-in"
         data-aos-duration="1000"
         data-aos-once="false"

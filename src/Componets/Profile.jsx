@@ -21,14 +21,14 @@ function Profile() {
     }
 
   return (
-    <div className='w-full max-w-[1500px] flex justify-center items-center mx-auto mt-12'>
-        <div className='flex flex-row-reverse max-[1030px]:flex-col max-[1030px]:items-center justify-between max-w-[90%] text-center mx-auto '>
+    <div className='w-full overflow-hidden flex justify-center items-center mx-auto mt-12'>
+        <div className='flex flex-row-reverse max-[1030px]:flex-col max-[1030px]:items-center justify-between w-[85%] text-center mx-auto '>
 
             <div
                 data-aos="zoom-in-up"
                 data-aos-duration="1000"
                 data-aos-once="false" 
-                className='justify-end mr-0'>
+                className='justify-end'>
                 <Lottie
                     animationData={computer}
                     loop={true}
@@ -36,7 +36,7 @@ function Profile() {
                  />
             </div>
 
-            <div className=' items-center gap-y-4 pr-[16px] mt-5 flex flex-col'>
+            <div className=' items-center gap-y-4 mt-5 flex flex-col'>
                 <div
                     data-aos="zoom-in-up"
                     data-aos-duration="1000"

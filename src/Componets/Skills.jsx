@@ -46,7 +46,7 @@ function Skills() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col overflow-hidden max-[1030px]:mt-4 items-center justify-center">
       <div
         className="font-bold text-center mt-4 text-indigo-600 dark:text-indigo-500 text-5xl "
         data-aos="zoom-in-up"
@@ -57,7 +57,7 @@ function Skills() {
       </div>
 
       <div
-        className="grid grid-cols-3 place-items-center w-[80%]  items-center justify-center text-center content-center mx-auto  max-[600px]:mx-auto max-[600px]:grid-cols-2  mt-12 gap-y-5 "
+        className="grid grid-cols-3 place-items-center w-[80%] pb-10 items-center justify-center text-center content-center mx-auto  max-[600px]:grid-cols-2  mt-12 gap-y-5 "
         data-aos="zoom-in"
         data-aos-duration="1500"
         data-aos-once="false"
