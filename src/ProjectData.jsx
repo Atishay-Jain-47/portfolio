@@ -1,4 +1,4 @@
-import { ShopCart, WeatherApp, Portfolio, ToDo, NumberGussing, StudySync, Github } from "./assets/Constant"
+import { ShopCart, WeatherApp, Portfolio, ToDo, NumberGussing, StudySync, Github, StudyNotion } from "./assets/Constant"
 
 const project = [
     {
@@ -51,6 +51,14 @@ const project = [
         liveLink: "https://portfolio-brown-three-20.vercel.app/",
         github: "https://github.com/Atishay-Jain-47/portfolio"
     },
+
+    {
+        image:StudyNotion,
+        title: "Study Notion",
+        technologies: ["React", "Tailwind", "Express", "MongoDB"],
+        liveLink: "https://study-notion-navy-seven.vercel.app/",
+        github: "https://github.com/Atishay-Jain-47/StudyNotion-LMS"
+    }
 ]
 
 export default project;

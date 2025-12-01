@@ -18,6 +18,7 @@ import WeatherApp from './WeatherApp.png';
 import StudySync from './StudySync.png';
 import Portfolio from './Portfoilio.png';
 import NumberGussing from './NumberGuessing.png';
+import StudyNotion from './StudyNotion.png';
 
 
 export {
@@ -41,6 +42,7 @@ export {
     StudySync,
     Portfolio,
     NumberGussing,
+    StudyNotion,
   };
 
   
